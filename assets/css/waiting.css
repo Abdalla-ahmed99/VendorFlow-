@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.alert {
+    font-size: 1.3em;
+    font-weight: bold;
+text-align: center;
+background-color: antiquewhite;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    /* font-size: 0.9em; */
+    color: #555;
+    margin-left: 2%;
+
+}
+
+.form-control {
+    height: 45px;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.2);
+}
+
+button[type="submit"] {
+    background-color:black;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100% ;
+    font-weight: bold;
+
+}
+
+button[type="submit"]:hover {
+    background-color:rgb(42, 41, 41);
+}
+input,textarea{
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 1%;
+   
+}
+
+/* input[type="file"] {
+    padding: 8px;
+} */
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .form-control {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

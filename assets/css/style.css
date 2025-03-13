@@ -1,0 +1,176 @@
+/* styles.css */
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+}
+.sidebar {
+    max-width: 330px;
+    min-width: 300px;
+    background-color: #343a40;
+    padding: 30px 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    color: #fff;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.sidebar h4 {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.sidebar img.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #09c528;
+    margin-bottom: 20px;
+}
+
+.nav-pills .nav-link {
+    font-size: 1.1rem;
+    color: #adb5bd;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #028f19;
+    color: white;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #038d1a;
+    color: white;
+}
+
+.content {
+    padding: 40px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#vendor-search {
+    width: 100%;
+    padding: 12px 45px 12px 25px;
+    border-radius: 50px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+#vendor-search:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 187, 0.5);
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #007bff;
+}
+
+.vendor-card {
+    width: 380px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.vendor-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.vendor-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vendor-card .card-body {
+    padding: 15px 20px;
+}
+
+.vendor-card .card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.vendor-card .card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.vendor-card .btn {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.close-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color:red;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+        z-index: 1000;
+
+    }
+    .close-btn {
+        display: block;
+    }
+    .profile-picture-toggle {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+}
